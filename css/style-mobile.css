@@ -1,0 +1,36 @@
+
+
+/* Potrait Mobile Version */
+@media (max-width: 575.98px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    body h1 {}
+    body h2 {}
+    body h3 {}
+    body p {}
+    
+    body nav {
+        background-color: var(--color-4);
+        padding: 10px;
+    }
+
+    nav {
+        height: 10vh;
+    }
+
+    nav .logo {
+        height: 70%;
+        width: auto;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        /* margin: auto; */
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+}

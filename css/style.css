@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+:root {
+    --color-1: #000957;
+    --color-2: #344CB7;
+    --color-3: #577BC1;
+    --color-4: #EBE645;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body h1 {
+    font-size: 32px;
+    text-transform: capitalize;
+    text-align: center;   
+}
+
+body h2 {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+body h3 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+body p {
+    font-size: 17px;
+}
+
+nav {
+    display: flex;
+    height: 90px;
+    width: 100%;
+    padding: 10px 75px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-1);
+}
+
+nav .logo {
+    height: 100%;
+    width: auto;
+}
+
+nav .logo img {
+    height: 100%;
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    /* margin: auto; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-3);
+    font-size: 17px;
+    font-weight: 400;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+.destination {
+    margin-top: 60px;
+}
+
+.destination h1, h2 {
+    color: var(--color-1);
+}
+
+.destination h2 {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.destination  h3 {
+    font-weight: 700;
+    font-size: 60px;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    text-shadow: 5px 5px 10px rgba(0,0,0,0.8);  
+}
+
+.destination .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.destination a {
+    text-decoration: none;
+}
+.destination .cover {
+    background-color: red;
+    width: 300px;
+    height: 200px;
+}
+
+.destination .card {
+    margin: 15px;
+    border: none;
+    width: 320px;
+    height: 250px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.destination img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.destination .card .title {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+.destination .price {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .5s;
+    transform: translateY(300px);
+}
+
+.destination .price p {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.destination .price span {
+    font-weight: 600;
+    font-size: 27px;
+    background: -webkit-linear-gradient(left, #079e1b, #000957);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.destination .card:hover .price {
+    transform: translateY(0);
+}
+
+
+/* BRANDING Section */
+.branding {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-4);
+    padding: 50px 0;
+    width: 100%;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.branding .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.branding .card {
+    padding: 20px 20px 10px 20px;
+    width: 230px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
+}
+
+.branding .card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    transform: translateY(-15px);
+}
+
+.branding h1 {
+    color: var(--color-1);
+}
+
+.branding h3 {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.branding h3, p {
+    color: var(--color-1);
+}
+
+.branding i {
+    color: var(--color-4);
+}
+
+.branding p {
+    font-weight: 400;
+}
+
+footer {
+    margin-bottom: 0;
+    margin-top: 60px;
+    background-color:var(--color-1);
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+footer i {
+    color: red;
+}
+
+footer p {
+    color: white;
+}
