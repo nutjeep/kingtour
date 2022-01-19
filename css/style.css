@@ -84,8 +84,12 @@ nav ul li a:hover {
     margin-top: 60px;
 }
 
-.destination h1, h2 {
+.destination h1 {
     color: var(--color-1);
+}
+
+.destination h2 {
+    color: var(--color-2);
 }
 
 .destination h2 {
@@ -101,7 +105,8 @@ nav ul li a:hover {
     text-shadow: 5px 5px 10px rgba(0,0,0,0.8);  
 }
 
-.destination .container {
+.destination .contain {
+    padding: 0 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -167,7 +172,6 @@ nav ul li a:hover {
     background: -webkit-linear-gradient(left, #079e1b, #000957);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 .destination .card:hover .price {
@@ -186,9 +190,11 @@ nav ul li a:hover {
     background-image: url('../img/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
-.branding .container {
+.branding .contain {
+    padding: 0 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -208,7 +214,7 @@ nav ul li a:hover {
 }
 
 .branding .card:hover {
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
     transform: translateY(-15px);
 }
 

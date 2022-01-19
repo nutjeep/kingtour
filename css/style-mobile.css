@@ -1,5 +1,3 @@
-
-
 /* Potrait Mobile Version */
 @media (max-width: 575.98px) {
 
@@ -7,10 +5,21 @@
         overflow-x: hidden;
     }
 
-    body h1 {}
-    body h2 {}
-    body h3 {}
-    body p {}
+    body h1 {
+        font-size: 26px;
+    }
+
+    body h2 {
+        font-size: 23px;
+    }
+
+    body h3 {
+        font-size: 18px;
+    }
+
+    body p {
+        font-size: 15px;
+    }
     
     body nav {
         background-color: var(--color-4);
@@ -31,6 +40,44 @@
         /* margin: auto; */
         align-items: flex-end;
         justify-content: space-between;
+    }
+
+    .destination h3 {
+        font-size: 30px;
+    }
+
+    .destination .card {
+        width: 160px;
+        height: 150px;
+        margin: 10px;
+    }
+
+    .destination img {
+        height: 75%;
+    }
+
+    .destination .price {
+        position: inherit;
+        transform: translateY(0);
+        background-color: var(--color-4);
+        padding-top: 5px;
+    }
+
+    .destination .price p {
+        font-weight: 400;
+        font-size: 15px;
+        color: var(--color-1);
+    }
+    
+    .destination .price span {
+        font-size: 18px;
+    }
+
+    .branding .card {
+        width: 160px;
+        margin: 10px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+        transition: .5s;
     }
 
 }
