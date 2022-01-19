@@ -17,6 +17,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+
 body h1 {
     font-size: 32px;
     text-transform: capitalize;
@@ -35,6 +36,12 @@ body h3 {
 
 body p {
     font-size: 17px;
+}
+
+.destination.blur-effect, .branding.blur-effect {
+    filter: blur(3px);
+    pointer-events: none;
+    user-select: none;
 }
 
 nav {
@@ -93,7 +100,7 @@ nav .toggle-menu input {
     position: absolute;
     width: 44px;
     height: 28px;
-    opacity: 0.5;
+    opacity: 0;
     left: -8px;
     top: -4px;
     cursor: default;

@@ -2,7 +2,7 @@
 @media (max-width: 575.98px) {
 
     body {
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     body h1 {
@@ -22,12 +22,16 @@
     }
     
     body nav {
-        /* background-color: var(--color-4); */
         padding: 10px;
+    }
+
+    body .hero, .destination, .branding {
+        filter: blur();
     }
 
     nav {
         height: 65px;
+        width: 100%;
         overflow: hidden;
     }
 
@@ -43,16 +47,46 @@
         flex-direction: column;
         align-items: flex-end;
         justify-content: space-evenly;
+        align-items: center;
         z-index: 1;
-        height: 70vh;
-        width: 30vh;
+        height: 50vh;
+        width: 100%;
         background-color: var(--color-1);
-        transform: translateX(100%);
+        transform: translateY(-100%);
         transition: all .5s;
     }
 
+    nav ul.slide {
+        transform: translateY(0);
+    }
+
     nav .toggle-menu {
-        display: inherit;
+        display: flex;
+        z-index: 2;
+    }
+
+    /* Animation Toggle Menu */
+    .toggle-menu span:nth-child(2) {
+        transform-origin: 0 0;
+    }
+    
+    .toggle-menu span:nth-child(4) {
+        transform-origin: 0 100%;
+    }
+    
+    .toggle-menu input:checked ~ span:nth-child(2){
+        transform: rotate(45deg) translate(-1px, 1px);    
+        background-color: white;
+    }
+    
+    .toggle-menu input:checked ~ span:nth-child(4){
+        transform: rotate(-45deg) translate(-2px, 0);
+        background-color: white;
+    }
+    
+    .toggle-menu input:checked ~ span:nth-child(3){
+        opacity: 0;
+        transform: scale(0);
     }
 
     .destination h3 {
@@ -87,7 +121,7 @@
     }
 
     .branding .card {
-        width: 160px;
+        width: 100%;
         margin: 10px;
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
         transition: .5s;
