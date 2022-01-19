@@ -80,6 +80,34 @@ nav ul li a:hover {
     color: white;
 }
 
+nav .toggle-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    display: none;
+}
+
+nav .toggle-menu input {
+    position: absolute;
+    width: 44px;
+    height: 28px;
+    opacity: 0.5;
+    left: -8px;
+    top: -4px;
+    cursor: default;
+}
+
+nav .toggle-menu span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: var(--color-3);
+    border-radius: 3px;
+    transition: all .5s;
+}
+
 .destination {
     margin-top: 60px;
 }
