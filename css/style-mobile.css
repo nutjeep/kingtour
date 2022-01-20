@@ -25,14 +25,23 @@
         padding: 10px;
     }
 
-    body .hero, .destination, .branding {
+    body .carousel, .hero, .destination, .branding {
         filter: blur();
+    }
+    
+    .carousel.blur-effect,
+    .destination.blur-effect,
+    .branding.blur-effect {
+        filter: blur(3px);
+        pointer-events: none;
+        user-select: none;
     }
 
     nav {
         height: 65px;
         width: 100%;
-        overflow: hidden;
+        /* overflow: hidden; */
+        z-index: 999;
     }
 
     nav .logo {
@@ -87,6 +96,16 @@
     .toggle-menu input:checked ~ span:nth-child(3){
         opacity: 0;
         transform: scale(0);
+    }
+
+    .carousel .carousel-item {
+        height: 100%;
+        background: no-repeat scroll center scroll;
+        background-size: cover;
+    }
+
+    .carousel .carousel-caption {
+        bottom: 0;
     }
 
     .destination h3 {
