@@ -10,6 +10,7 @@
     --color-2: #344CB7;
     --color-3: #577BC1;
     --color-4: #EBE645;
+    --color-5: #94b5f8;
 }
 
 body {
@@ -75,7 +76,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #94b5f8;
+    color: var(--color-5);
     font-size: 17px;
     font-weight: 400;
 }
@@ -116,11 +117,38 @@ nav.active {
     background-color: var(--color-1);
 }
 
+nav i {
+    color: var(--color-5);
+}
+
 nav .dropdown ul {
+    position: absolute;
     display: flex;
     flex-direction: column;
-    top: 0;
-    padding-top: 10px;
+    top: 5px;
+    right: 3px;
+    /* padding: 10px 20px 10px 10px; */
+    justify-content: center;
+    background-color: var(--color-1);
+    transition: .5s;
+    opacity: 0;
+    /* transform: translateY(-100%); */
+}
+
+nav .dropdown ul li {
+    list-style: none;
+    text-align: end;
+}
+
+nav .dropdown ul li a {
+    text-decoration: none;
+    color: var(--color-5);
+    text-align: center;
+}
+
+nav .dropdown ul.dropdown-slide {
+    /* transform: translateY(0); */
+    opacity: 1;
 }
 
 .carousel .carousel-indicators button {
@@ -210,8 +238,8 @@ nav .dropdown ul {
     animation-duration: 1.8s;
 }
 
-.about {
-    margin-top: 60px;
+.about, .destination, .gallery {
+    padding-top: 100px;
 }
 
 .about .contain {
@@ -247,10 +275,6 @@ nav .dropdown ul {
 .about p {
     text-align: center;
     margin-top: 20px;
-}
-
-.destination {
-    margin-top: 60px;
 }
 
 .destination h2 {
@@ -359,7 +383,7 @@ nav .dropdown ul {
 
 /* BRANDING Section */
 .branding {
-    margin-top: 60px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     background-color: var(--color-4);
@@ -416,10 +440,6 @@ nav .dropdown ul {
     color: var(--color-1);
 }
 
-.gallery {
-    margin-top: 60px;
-}
-
 .gallery .contain {
     padding: 0 20px;
     display: flex;
@@ -448,8 +468,8 @@ nav .dropdown ul {
 }
 
 footer {
-    margin-bottom: 0;
-    margin-top: 60px;
+    bottom: 0;
+    margin-top: 100px;
     background-color:var(--color-1);
     text-align: center;
     color: white;
@@ -511,10 +531,23 @@ footer .logo img {
     width: auto;
 }
 
-footer i {
-    color: red;
-}
-
 footer p {
     color: white;
+}
+
+.copyright {
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    background-color: #050b3d;
+    padding: 15px 0;
+}
+
+.copyright p {
+    text-align: center;
+    color: white;
+}
+
+.copyright i {
+    color: red;
 }

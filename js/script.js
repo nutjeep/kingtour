@@ -12,8 +12,7 @@ function toggle() {
     blur.classList.toggle('blur-effect')
 }
 
-
-// Stiky Navigation Bar
+// Active Navigation Bar
 window.addEventListener("scroll", function(){
     var nav = document.querySelector("nav");
     nav.classList.toggle("active", window.scrollY > 50);

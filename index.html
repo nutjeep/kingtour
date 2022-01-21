@@ -38,30 +38,50 @@
   <body>
 
     <!-- Navigation Section -->
-    <nav>
-        <div class="logo">
-            <a href="index.html#"><img src="img/logo-nav.png" alt="Logo"></a>
+    <!-- <nav>
+      <div class="logo">
+          <a href="index.html#"><img src="img/logo-nav.png" alt="Logo"></a>
+      </div>
+      <ul class="text-capitalize">
+        <li class="me-1"><a href="">paket wisata</a></li>
+        <i class="bi bi-caret-down-fill"></i>
+        <div class="dropdown">
+          <ul>
+            <li><a href="">Halo semua</a></li>
+            <li><a href="">Halo Kalian</a></li>
+            <li><a href="">Halo kamu</a></li>
+          </ul>
         </div>
-        <ul class="text-capitalize">
-            <li><a href="">paket wisata</a></li>
-            <div class="dropdown d-none">
-              <ul>
-                <li>halo semua</li>
-                <li>halo semua</li>
-                <li>halo semua</li>
-              </ul>
-            </div>
-            <li><a href="">open trip</a></li>
-            <li><a href="">galeri</a></li>
-            <li><a href="">hubungi kami</a></li>
-        </ul>
+        <li><a href="">open trip</a></li>
+        <li><a href="">galeri</a></li>
+        <li><a href="">hubungi kami</a></li>
+      </ul>
 
-        <div class="toggle-menu">
-            <input type="checkbox" onclick="toggle()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+      <div class="toggle-menu">
+          <input type="checkbox" onclick="toggle()">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+    </nav> -->
+    <nav>
+      <div class="logo">
+          <a href="index.html#"><img src="img/logo-nav.png" alt="Logo"></a>
+      </div>
+      <ul class="text-capitalize">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="">paket wisata</a></li>
+        <li><a href="">open trip</a></li>
+        <li><a href="#gallery">galeri</a></li>
+        <li><a href="#footer">hubungi kami</a></li>
+      </ul>
+
+      <div class="toggle-menu">
+          <input type="checkbox" onclick="toggle()">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
     </nav>
 
     <!-- Slider Section -->
@@ -104,7 +124,7 @@
     </div>
 
     <!-- About Us -->
-    <div class="about">
+    <div class="about" id="about">
       <div class="contain">
         <div class="title">
           <h1>About King Tour</h1>
@@ -279,7 +299,7 @@
     </div>
 
     <!-- Gallery Section -->
-    <div class="gallery">
+    <div class="gallery" id="gallery">
       <h1 data-aos="fade-up">Galeri</h1>
       <div class="contain">
         <div class="wrapper">
@@ -308,7 +328,7 @@
     </div>
 
     <!-- Footer Section -->
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="row contain">
         <div class="col-sm-4 column column-1">
           <a href="#">
@@ -373,8 +393,10 @@
           </div>
         </div>
       </div>
-      <!-- <p>Created with <i class="far fa-heart"></i> by M Najib 'Abdulloh</p> -->
     </footer>
+    <div class="copyright">
+      <p>Created with <i class="far fa-heart"></i> by M Najib 'Abdulloh</p>
+    </div>
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
