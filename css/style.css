@@ -256,18 +256,6 @@ nav .dropdown ul.dropdown-slide {
     flex-direction: column;
 }
 
-.about .brand {
-    position: absolute;
-    height: 50px;
-    width: auto;
-    text-align: center;
-}
-
-.about .banner{
-    width: 70%;
-    margin-bottom: 25px;
-}
-
 .about img {
     width: 60%;
 }

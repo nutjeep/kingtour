@@ -102,6 +102,18 @@
         opacity: 0;
         transform: scale(0);
     }
+    
+    .about, .destination, .gallery {
+        padding-top: 70px;
+    }
+
+    .about .contain {
+        padding: 0 20px;
+    }
+
+    .about img {
+        width: 100%;
+    }
 
     .carousel .carousel-indicators {
         bottom: -15px;
@@ -185,15 +197,23 @@
         display: none;
     }
 
+    .branding {
+        margin-top: 70px;
+    }
+
     .branding .card {
         width: 100%;
         margin: 10px;
         box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
         transition: .5s;
     }
+
+    footer {
+        margin-top: 70px;
+    }
     
     footer .column-1 {
-margin-bottom: 30px;
+        margin-bottom: 30px;
     }
 
     footer .column-2 {
