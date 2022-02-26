@@ -24,11 +24,12 @@ body h1 {
     text-transform: capitalize;
     text-align: center;   
     color: var(--color-1);
+    font-weight: 600;
 }
 
 body h2 {
-    font-size: 27px;
-    font-weight: 600;
+    font-size: 28px;
+    font-weight: 400;
 }
 
 body h3 {
@@ -39,6 +40,119 @@ body h3 {
 body p {
     font-size: 17px;
 }
+
+.carousel.blur-effect,
+.about.blur-effect,
+.destination.blur-effect,
+.branding.blur-effect,
+.gallery.blur-effect,
+.footer.blur-effect {
+    filter: blur(3px);
+    pointer-events: none;
+    user-select: none;
+}
+
+/* nav {
+    display: flex;
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    padding-left: 20px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: none;
+    z-index: 999;
+}
+
+nav .logo {
+    height: 100%;
+    width: 100%;
+}
+
+nav .logo a img {
+    height: 100%;
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    float: right;
+}
+
+nav ul li {
+    position: relative;
+    list-style: none;
+    margin: 0 15px;
+    float: left;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-5);
+    font-size: 17px;
+    font-weight: 400;
+    padding: 8px;
+    display: block;
+    transition: .2s;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+nav ul li ul {
+    position: absolute;
+    left: 0;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0;
+    align-items: flex-start;
+    opacity: 0;
+    transform: translateY(20px);
+    background-color: var(--color-1);
+}
+
+nav ul li:hover > ul {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+nav .toggle-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    display: none;
+}
+
+nav .toggle-menu input {
+    position: absolute;
+    width: 44px;
+    height: 28px;
+    opacity: 0;
+    left: -8px;
+    top: -4px;
+    cursor: default;
+}
+
+nav .toggle-menu span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: var(--color-3);
+    border-radius: 3px;
+    transition: all .5s;
+}
+
+nav.active {
+    background-color: var(--color-1);
+} */
+
 
 nav {
     display: flex;
@@ -64,14 +178,17 @@ nav .logo img {
 
 nav ul {
     display: flex;
-    /* margin: auto; */
     align-items: center;
     justify-content: space-between;
+    float: right;
 }
 
 nav ul li {
+    position: relative;
     list-style: none;
     margin: 0 15px;
+    color: var(--color-5);
+    cursor: pointer;
 }
 
 nav ul li a {
@@ -79,9 +196,46 @@ nav ul li a {
     color: var(--color-5);
     font-size: 17px;
     font-weight: 400;
+    padding: 8px;
+}
+
+nav ul li:hover {
+    color: white;
 }
 
 nav ul li a:hover {
+    color: white;
+}
+
+nav ul li:hover i {
+    color: white;
+}
+
+nav ul li ul {
+    position: absolute; 
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0;
+    align-items: flex-start;
+    padding: 10px 0;
+    display: none;
+    background-color: green;
+    transition: .3s;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+nav ul li ul li {
+    width: 100%;
+    color: var(--color-5);
+    margin: 5px 5px;
+}
+
+nav ul li ul li:hover {
     color: white;
 }
 
@@ -119,36 +273,6 @@ nav.active {
 
 nav i {
     color: var(--color-5);
-}
-
-nav .dropdown ul {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 5px;
-    right: 3px;
-    /* padding: 10px 20px 10px 10px; */
-    justify-content: center;
-    background-color: var(--color-1);
-    transition: .5s;
-    opacity: 0;
-    /* transform: translateY(-100%); */
-}
-
-nav .dropdown ul li {
-    list-style: none;
-    text-align: end;
-}
-
-nav .dropdown ul li a {
-    text-decoration: none;
-    color: var(--color-5);
-    text-align: center;
-}
-
-nav .dropdown ul.dropdown-slide {
-    /* transform: translateY(0); */
-    opacity: 1;
 }
 
 .carousel .carousel-indicators button {
@@ -191,7 +315,7 @@ nav .dropdown ul.dropdown-slide {
     font-size: 100px;
     color: white;
     text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5);
-    animation-duration: 1.8s;
+    animation-duration: 2s;
 }
 
 .carousel .slide-1 button {
@@ -267,12 +391,10 @@ nav .dropdown ul.dropdown-slide {
 
 .destination h2 {
     color: var(--color-2);
-}
-
-.destination h2 {
     text-transform: capitalize;
     text-align: center;
 }
+
 
 .destination  h3 {
     font-weight: 700;
@@ -312,8 +434,19 @@ nav .dropdown ul.dropdown-slide {
 
 .destination .card img {
     width: 100%;
-    height: 100%;
-    
+    height: 100%; 
+}
+
+.destination .card a img::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.7;
 }
 
 .destination .card .title {
@@ -401,12 +534,6 @@ nav .dropdown ul.dropdown-slide {
     border: none;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(3px);
-    transition: .5s;
-}
-
-.branding .card:hover {
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
-    transform: translateY(-15px);
     transition: .5s;
 }
 
