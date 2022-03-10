@@ -21,7 +21,8 @@
     <link href="https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -39,58 +40,45 @@
   <body>
 
     <!-- Navigation Section -->
-    <!-- <nav class="nav" id="nav">
-      <div class="logo">
-        <a href="index.html#"><img src="img/logo-nav.png" alt="Logo"></a>
-      </div>
-      <ul class="text-capitalize">
-        <li><a href="index.html#about">Tentang</a></li>
-        <li><a href=>paket wisata <i class="bi bi-chevron-down"></i></a>
-          <ul>
-            <li><a href="">Bromo</a></li>
-            <li><a href="">Bali</a></li>
-            <li><a href="">Kawah Ijen</a></li>
-          </ul>
-        </li>
-        <li><a href="index.html#gallery">galeri</a></li>
-        <li><a href="index.html#footer">hubungi kami</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo-nav.png" alt="Logo">
+      </a>
 
-      <div class="toggle-menu">
+      <div class="toggle-menu" type="button" data-toggle="collapse"data-target="#navbarSupportedContent"aria-controls="navbarSupportedContent" aria-expanded="false"aria-label="Toggle navigation">
         <input type="checkbox" onclick="toggle()">
         <span></span>
         <span></span>
         <span></span>
       </div>
-    </nav> -->
-
-    <nav>
-      <div class="logo">
-          <a href="index.html#"><img src="img/logo-nav.png" alt="Logo"></a>
-      </div>
-      <ul class="text-capitalize">
-        <li><a href="index.html#about">Tentang</a></li>
-        <li>paket wisata +</li>
-          <ul>
-            <li><a href="">surabaya</a></li>
-            <li><a href="">bromo</a></li>
-            
-          </ul>
-        </li>
-        <li><a href="index.html#gallery">galeri</a></li>
-        <li><a href="index.html#footer">hubungi kami</a></li>
-      </ul>
-
-      <div class="toggle-menu">
-          <input type="checkbox" onclick="toggle()">
-          <span></span>
-          <span></span>
-          <span></span>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">tentang</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              paket wisata
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="paket-bromo.html">bromo tour</a>
+              <a class="dropdown-item" href="#">batu - malang tour</a>
+              <a class="dropdown-item" href="#">surabaya</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">galeri</a>
+          </li>
+        </ul>
       </div>
     </nav>
-       
+
     <!-- Slider Section -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="top: 0;">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -146,92 +134,125 @@
       <h1 data-aos="fade-up">pilih destinasi terbaik untuk liburanmu</h1>
       <h2 class="mt-4" data-aos="zoom-in-up">destinasi populer</h2>
       <div class="contain">
-        <a href="">
-          <div class="card" data-aos="flip-up">
-            <img src="img/bromo.jpg" alt="Bromo">
-            <div class="title"><h3>Bromo</h3></div>
+        <a href="paket-bromo.html">
+          <div class="card">
+            <div class="background">
+              <img src="img/bromo.jpg" alt="Bromo">
+            </div>
+            <div class="content">
+             <h3 class="title">Bromo</h3>
+            </div>
             <div class="price">
-              <p>Start from <br><span>IDR700.000</span></p>
-              <p class="go-to">Let's Go !</p>
+             <p>start from<span> IDR 300.000</span></p>
             </div>
           </div>
         </a>
         <a href="">
-          <div class="card" data-aos="flip-up">
-            <img src="img/batu-malang.jpg" alt="Bromo">
-            <div class="title"><h3>Batu - Malang</h3></div>
+          <div class="card">
+            <div class="background">
+              <img src="img/batu-malang.jpg" alt="Batu - Malang">
+            </div>
+            <div class="content">
+             <h3 class="title">batu-malang</h3>
+            </div>
             <div class="price">
-              <p>Start from <br><span>IDR500.000</span></p>
-              <p class="go-to">Let's Go !</p>
+             <p>start from<span> IDR 300.000</span></p>
             </div>
           </div>
         </a>
         <a href="">
-          <div class="card" data-aos="flip-up">
-            <img src="img/kawah-ijen.jpg" alt="Bromo">
-            <div class="title"><h3>Kawah ijen</h3></div>
+          <div class="card">
+            <div class="background">
+              <img src="img/surabaya.jpg" alt="Surabaya">
+            </div>
+            <div class="content">
+             <h3 class="title">surabaya</h3>
+            </div>
             <div class="price">
-              <p>Start from <br><span>IDR800.000</span></p>
-              <p class="go-to">Let's Go !</p>
+             <p>start from<span> IDR 300.000</span></p>
             </div>
           </div>
         </a>
         <a href="">
-          <div class="card" data-aos="flip-up">
-            <img src="img/banyuwangi.jpg" alt="Bromo">
-            <div class="title"><h3>Banyuwangi</h3></div>
+          <div class="card">
+            <div class="background">
+              <img src="img/banyuwangi.jpg" alt="Banyuwangi">
+            </div>
+            <div class="content">
+             <h3 class="title">banyuwangi</h3>
+            </div>
             <div class="price">
-              <p>Start from <br><span>IDR1.000.000</span></p>
-              <p class="go-to">Let's Go !</p>
+             <p>start from<span> IDR 300.000</span></p>
             </div>
           </div>
         </a>
         <a href="">
-          <div class="card" data-aos="flip-up">
-            <img src="img/yogyakarta.jpg" alt="Bromo">
-            <div class="title"><h3>Yogyakarta</h3></div>
+          <div class="card">
+            <div class="background">
+              <img src="img/yogyakarta.jpg" alt="Yogyakarta">
+            </div>
+            <div class="content">
+             <h3 class="title">yogyakarta</h3>
+            </div>
             <div class="price">
-              <p>Start from <br><span>IDR1.200.000</span></p>
-              <p class="go-to">Let's Go !</p>
+             <p>start from<span> IDR 300.000</span></p>
             </div>
           </div>
-        </a> 
-      </div>
-
-      <h2 class="mt-5" data-aos="zoom-in-up">destinasi mancanegara</h2>
-      <div class="contain">
-        <a href="">
-          <div class="card" data-aos="flip-up">
-            <img src="img/malaysia.jpg" alt="Bromo">
-            <div class="title"><h3>Malaysia</h3></div>
-            <div class="price">
-              <p>Start from <br><span>IDR7.000.000</span></p>
-              <p class="go-to">Let's Go !</p>
+        </a><a href="">
+          <div class="card">
+            <div class="background">
+              <img src="img/dieng.jpg" alt="Dieng">
             </div>
-          </div>
-        </a>
-        <a href="">
-          <div class="card" data-aos="flip-up">
-            <img src="img/singapura.jpg" alt="Bromo">
-            <div class="title"><h3>Singapura</h3></div>
+            <div class="content">
+             <h3 class="title">dieng</h3>
+            </div>
             <div class="price">
-              <p>Start from <br><span>IDR10.000.000</span></p>
-              <p class="go-to">Let's Go !</p>
+             <p>start from<span> IDR 300.000</span></p>
             </div>
           </div>
         </a>
         <a href="">
-          <div class="card" data-aos="flip-up">
-            <img src="img/jepang.jpg" alt="Bromo">
-            <div class="title"><h3>Jepang</h3></div>
+          <div class="card">
+            <div class="background">
+              <img src="img/bali.jpg" alt="Bali">
+            </div>
+            <div class="content">
+             <h3 class="title">bali</h3>
+            </div>
             <div class="price">
-              <p>Start from <br><span>IDR20.000.000</span></p>
-              <p class="go-to">Let's Go !</p>
+             <p>start from<span> IDR 300.000</span></p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="card">
+            <div class="background">
+              <img src="img/lombok.jpg" alt="Lombok">
+            </div>
+            <div class="content">
+             <h3 class="title">lombok</h3>
+            </div>
+            <div class="price">
+             <p>start from<span> IDR 300.000</span></p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="card">
+            <div class="background">
+              <img src="img/religi.jpg" alt="Wisata Religi">
+            </div>
+            <div class="content">
+             <h3 class="title">wisata religi</h3>
+            </div>
+            <div class="price">
+             <p>start from<span> IDR 300.000</span></p>
             </div>
           </div>
         </a>
       </div>
     </div>
+      
 
     <!-- Branding Section -->
     <div class="branding">
@@ -264,7 +285,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. ossimus dolorem, eveniet voluptatem illo id ratione?</p>
           </div>
         </div>
-        <div class="card" data-aos="zoom-out" data-aos-delay="700">
+        <div class="card" data-aos="zoom-out" data-aos-delay="650">
           <div class="icon">
             <i class=" fa-2x fas fa-receipt mb-3"></i>
           </div>
@@ -273,7 +294,7 @@
             <p>Pengalaman booking di call center, pelayanan yang cepat dan esponsif</p>
           </div>
         </div>
-        <div class="card" data-aos="zoom-out" data-aos-delay="850">
+        <div class="card" data-aos="zoom-out" data-aos-delay="750">
           <div class="icon">
             <i class="fa-2x fas fa-users mb-3"></i>
           </div>
@@ -282,7 +303,7 @@
             <p>Kami memiliki tim dan pemberdayaan orang lokal yang engoperasikan langsung setiap destinasi tanpa merusak earifan lokal</p>
           </div>
         </div>
-        <div class="card" data-aos="zoom-out" data-aos-delay="1000">
+        <div class="card" data-aos="zoom-out" data-aos-delay="850">
           <div class="icon">
             <i class="fa-2x fas fa-umbrella-beach mb-3"></i>
           </div>
@@ -291,7 +312,7 @@
             <p>Kami bekerja dengan hati, karena memiliki passion dalam engembangan wisata alam Indonesia</p>
           </div>
         </div>
-        <div class="card" data-aos="zoom-out" data-aos-delay="1150">
+        <div class="card" data-aos="zoom-out" data-aos-delay="950">
           <div class="icon">
             <i class="fa-2x fas fa-camera mb-3"></i>
           </div>
@@ -403,14 +424,19 @@
       <p>Created with <i class="far fa-heart"></i> by M Najib 'Abdulloh</p>
     </div>
 
+
+
+    <!-- Local JavaScript -->
+    <script src="js/script.js"></script>
+
     <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
-    <script src="js/script.js"></script>
-
     <!-- Animation on Scroll -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

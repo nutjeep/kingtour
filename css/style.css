@@ -52,191 +52,36 @@ body p {
     user-select: none;
 }
 
-/* nav {
-    display: flex;
-    position: fixed;
-    height: 90px;
-    width: 100%;
-    padding-left: 20px;
-    justify-content: space-around;
-    align-items: center;
-    background-color: none;
-    z-index: 999;
-}
-
-nav .logo {
-    height: 100%;
-    width: 100%;
-}
-
-nav .logo a img {
-    height: 100%;
-    width: auto;
-}
-
-nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    float: right;
-}
-
-nav ul li {
-    position: relative;
-    list-style: none;
-    margin: 0 15px;
-    float: left;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: var(--color-5);
-    font-size: 17px;
-    font-weight: 400;
-    padding: 8px;
-    display: block;
-    transition: .2s;
-}
-
-nav ul li a:hover {
-    color: white;
-}
-
-nav ul li ul {
-    position: absolute;
-    left: 0;
-    width: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    padding: 0;
-    align-items: flex-start;
-    opacity: 0;
-    transform: translateY(20px);
-    background-color: var(--color-1);
-}
-
-nav ul li:hover > ul {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-nav .toggle-menu {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 20px;
-    justify-content: space-between;
-    display: none;
-}
-
-nav .toggle-menu input {
-    position: absolute;
-    width: 44px;
-    height: 28px;
-    opacity: 0;
-    left: -8px;
-    top: -4px;
-    cursor: default;
-}
-
-nav .toggle-menu span {
-    display: block;
-    width: 28px;
-    height: 3px;
-    background-color: var(--color-3);
-    border-radius: 3px;
-    transition: all .5s;
-}
-
-nav.active {
-    background-color: var(--color-1);
-} */
-
-
 nav {
-    display: flex;
-    position: fixed;
-    height: 90px;
-    width: 100%;
-    padding: 10px 75px;
-    justify-content: space-between;
-    align-items: center;
     background-color: none;
-    z-index: 999;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
-nav .logo {
-    height: 100%;
+nav .navbar-brand img{
+    height: 50px;
     width: auto;
 }
 
-nav .logo img {
-    height: 100%;
-    width: auto;
+nav .collapse .navbar-nav .nav-item .dropdown-menu {
+    background-color: var(--color-1);
 }
 
-nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    float: right;
+nav .collapse .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: var(--color-2);
 }
 
-nav ul li {
-    position: relative;
-    list-style: none;
-    margin: 0 15px;
+nav .collapse .navbar-nav .nav-item a {
+    text-transform: capitalize;
     color: var(--color-5);
-    cursor: pointer;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: var(--color-5);
-    font-size: 17px;
-    font-weight: 400;
-    padding: 8px;
-}
-
-nav ul li:hover {
+nav .collapse .navbar-nav .nav-item a:hover {
     color: white;
 }
 
-nav ul li a:hover {
-    color: white;
-}
-
-nav ul li:hover i {
-    color: white;
-}
-
-nav ul li ul {
-    position: absolute; 
-    width: 180px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    padding: 0;
-    align-items: flex-start;
-    padding: 10px 0;
-    display: none;
-    background-color: green;
-    transition: .3s;
-}
-
-nav ul li:hover > ul {
-    display: inherit;
-}
-
-nav ul li ul li {
-    width: 100%;
-    color: var(--color-5);
-    margin: 5px 5px;
-}
-
-nav ul li ul li:hover {
-    color: white;
+nav .collapse {
+    justify-content: right;
 }
 
 nav .toggle-menu {
@@ -269,10 +114,6 @@ nav .toggle-menu span {
 
 nav.active {
     background-color: var(--color-1);
-}
-
-nav i {
-    color: var(--color-5);
 }
 
 .carousel .carousel-indicators button {
@@ -367,7 +208,7 @@ nav i {
 }
 
 .about .contain {
-    padding: 0 60px;
+    padding: 0 100px;
 }
 
 .about .content {
@@ -409,22 +250,22 @@ nav i {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .destination a {
     text-decoration: none;
 }
-.destination .cover {
-    background-color: red;
-    width: 300px;
-    height: 200px;
+
+.destination h3 {
+    font-size: 60px;
+    text-transform: capitalize;
 }
 
 .destination .card {
     margin: 15px;
     border: none;
-    width: 320px;
+    width: 350px;
     height: 250px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.5);
     display: flex;
@@ -434,10 +275,14 @@ nav i {
 
 .destination .card img {
     width: 100%;
-    height: 100%; 
+    height: 100%;   
 }
 
-.destination .card a img::after {
+.destination .card:hover img{
+    transform: scale(1.2);
+}
+
+.destination .card img::before {
     content: "";
     display: block;
     position: absolute;
@@ -449,58 +294,44 @@ nav i {
     opacity: 0.7;
 }
 
-.destination .card .title {
-    width: 100%;
+.destination .content {
+    display: block;
     position: absolute;
+    justify-content: center;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
 }
 
 .destination .price {
+    display: block;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
-    height: 100%;
     width: 100%;
-    border-radius: 0;
-    opacity: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: .5s;
-    transform: translateY(300px);
+    height: 25%;
+    bottom: 0;
 }
 
-.destination .price p {
-    font-weight: 400;
+.destination .card p {
+    color: white;
+    display: block;
+    position: absolute;
+    padding: 15px;
+    text-align: end; 
+    width: 100%;
+    height: 100%;  
+    font-weight: 300;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+.destination p span {
     font-size: 25px;
+    color: var(--color-4);
+    font-weight: 500;
 }
 
-.destination .price span {
-    font-weight: 600;
-    font-size: 27px;
-    background: -webkit-linear-gradient(left, #079e1b, #000957);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.destination .card:hover .price {
-    transform: translateY(0);
-}
-
-.destination .card .go-to {
-    background-color: var(--color-4);
-    font-size: 17px;
-    color: var(--color-2);
-    padding: 8px;
-    border-radius: 8px;
-}
-
-.destination .card .go-to:hover {
-    color: var(--color-1);
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
-}
 
 /* BRANDING Section */
 .branding {

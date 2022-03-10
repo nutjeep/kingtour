@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: #000957;
+    --color-2: #344CB7;
+    --color-3: #577BC1;
+    --color-4: #EBE645;
+    --color-5: #94b5f8;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.main {
+    padding: 0 40px;
+}
+
+.main .col-sm-8, .col-sm-4 {
+    padding: 0 30px;
+}
+
+.main .title {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.main .title h1 {
+    text-align: left;
+}
+
+.main .offer {
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.main .offer .content {
+    display: flex;
+    width: 100%;
+    margin-right: 15px;
+}
+
+.main .offer .content .material-icons {
+    font-size: 30px;
+    background-color: #CBDBFC;
+    color: var(--color-2);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.main .content .description h5,p{
+    line-height: 1;
+}
+
+.main .package-description {
+    margin-bottom: 100px;
+}
+
+.main .package-description p {
+    text-indent: 50px;
+    text-align: justify;
+}
+
+.main .package-detail h5 {
+    font-weight: 600;
+}
+
+.main .package-detail ul {
+    padding: 0;
+}
+
+.main .package-detail ul li {
+    list-style: none;
+}
+
+.main .package-detail ul i {
+    margin-right: 8px;
+    background-color: #CBDBFC;
+    color: #0CAB31;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.main .package-detail ul li .bi-x-circle {
+    color: red;
+}
+
+.main .itinerary {
+    margin-top: 100px;
+}
+
+.main .itinerary .title h3 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.main .itinerary .card {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 0;
+}
+
+.main .itinerary .card .title {
+    background-color: var(--color-5);
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    padding: 10px;
+}
+
+.main .itinerary .card .title h3 {
+    font-weight: 400;
+}
+
+.main .itinerary .card .description {
+    padding: 10px;
+}
+
+/* Right Column / Bottom Column */
+
+.widget {
+    margin-top: 100px;
+}
+
+.widget .card {
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px 5px;
+}
+
+.widget .card a {
+    text-decoration: none;
+}
+
+.widget .booking {
+    margin-bottom: 30px;
+}
+
+.widget .booking .participant {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.widget .booking .participant button {
+    box-shadow: none;
+    border: none;
+    background-color: var(--color-5);
+    padding: 8px;
+    margin: 5px;
+    width: 120px;
+    border-radius: 5px;
+} 
+
+.widget .booking .participant button:hover {
+    background-color: var(--color-2);
+    color: white;
+}
+
+.widget .booking .price {
+    margin-bottom: 30px;
+}
+
+.widget .booking .book-now {
+    width: 100%;
+    padding: 0;
+}
+
+.widget .booking .book-now button {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    background-color: var(--color-1);
+    padding: 10px 20px 0px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.widget .booking .book-now button p,i {
+    color: white;
+    font-size: 20px;
+    line-height: 100%;
+}
+
+.widget .contact .logo {
+    width: 100%;
+    margin-bottom: 50px;
+    justify-content: center;
+    display: flex;
+}
+
+.widget .contact .logo img {
+    width: 50%;
+    height: auto;
+}
+
+.widget .contact .contact-info {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+}
+
+.widget .contact .contact-info i {
+    color: var(--color-2);    
+    text-align: center;
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.widget .contact .contact-info p {
+    line-height: 25px;
+}
+
+@media (max-width: 575.98px) {
+    
+
+    header {
+        height: 18vh;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    header .background {
+        display: flex;
+        justify-content: center;
+    }
+
+    header .background img {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .main {
+        padding: 0 10px;
+    }
+
+    .main .offer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    .main .col-sm-8 {
+        margin-bottom: 15px;
+    }
+
+    .main .widget .contact {
+        display: none;
+    }
+
+}
