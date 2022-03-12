@@ -70,7 +70,7 @@ header .title {
 }
 
 .packages .card {
-    width: 350px;
+    width: 330px;
     padding-bottom: 20px;
     border-radius: 10px;
     margin: 15px;
@@ -80,13 +80,14 @@ header .title {
 .packages .banner {
     margin-bottom: 25px;
     width: 100%;
-    height: 180px;
+    height: 200px;
 }
 
 .packages .banner img {
     width: 100%;
     height: 100%;
     border-radius: 10px 10px 0 0;
+    overflow: hidden;
 }
 
 .packages .content {
@@ -136,12 +137,12 @@ header .title {
 }
 
 .packages .material-icons {
-    background-color: var(--color-5);
+    background-color: #CBDBFC;
     border-radius: 50%;
     width: 35px;
     height: 35px;
     text-align: center;
-    color: var(--color-1);
+    color: var(--color-2);
     margin-right: 10px;
     line-height: 35px;
 }

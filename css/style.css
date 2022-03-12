@@ -278,7 +278,7 @@ nav.active {
     height: 100%;   
 }
 
-.destination .card:hover img{
+.destination .card:hover img {
     transform: scale(1.2);
 }
 
@@ -496,4 +496,43 @@ footer p {
 
 .copyright i {
     color: red;
+}
+
+.btn-floating {
+    padding: 8px 15px;
+    border: solid 1px white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: #075E54;
+    border-radius: 25px;
+    position: fixed;
+    right: 25px;
+    bottom: 20px;
+    overflow: hidden;
+    z-index: 9999999;
+    transition: 0.5s;
+    display: flex;
+}
+
+.btn-floating:hover {
+    width: auto;
+}
+
+.btn-floating img {
+    height: 35px;
+    width: auto;
+    line-height: 20px;
+}
+
+.btn-floating span {
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    transition: .5s;
+    display: none;
+    line-height: -20px;
+    margin-left: 10px;
+}
+
+.btn-floating:hover span {
+    display: inherit;
 }

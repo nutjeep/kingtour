@@ -82,7 +82,7 @@ body {
     list-style: none;
 }
 
-.main .package-detail ul i {
+.main .package-detail ul li i {
     margin-right: 8px;
     background-color: #CBDBFC;
     color: #0CAB31;
@@ -222,6 +222,10 @@ body {
     line-height: 25px;
 }
 
+.main .widget .booking {
+    display: none;
+}
+
 @media (max-width: 575.98px) {
     
 
@@ -257,7 +261,7 @@ body {
         margin-bottom: 15px;
     }
 
-    .main .widget .contact {
+    .main .widget .contact, .booking {
         display: none;
     }
 
